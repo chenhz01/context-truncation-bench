@@ -4,6 +4,8 @@ Benchmark context-window truncation strategies on the same corpus and compare ho
 
 As of 2026-10-13, no direct equivalent found as of 2026-10-13: search across GitHub (194 queries) and the web surfaced LLM-framework context managers but no standalone, offline truncation-strategy benchmark harness.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 When a prompt or transcript exceeds the context window, something must be dropped. Teams pick a truncation rule — keep the head, keep the tail, summarise the middle — and rarely measure the consequences. Critical instructions get silently cut, weighted content disappears, and regressions go unnoticed because there is no shared yardstick. The decision deserves a benchmark, not a coin flip.
